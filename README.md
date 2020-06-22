@@ -11,26 +11,36 @@ and to get idea about how to improve access of ride-sharing services and determi
 
 ### Technical Analysis
 
-#### Summary of Ride Sharing Performance by each City Type 
+#### 1) Summary of Ride Sharing Performance by each City Type 
 ![SummaryDF](https://github.com/Juuune/PyBer_Analysis/blob/master/analysis/SummaryDF.PNG)
-#### Total Fare by each City Type
+- 
+#### 2) Total Fare by each City Type
 ![Total_Fare_by_CityType](https://github.com/Juuune/PyBer_Analysis/blob/master/analysis/Total_Fare_by_CityType.png)
-
-### Results
+- 
 
 ### Summary
+-
+- 
+
 
 ## Challenges Encountered and Overcome
 
 ### Challenges and Difficulties Encountered
 
 * Programming
-
+ - to drop index 
+ - to get weekly resample 
+ - get dataframe pivot table 
+ 
 * Data analysis
+ - to get the total drivers count 
 
 * Graphing, etc
-
+ - set date time x ticks and chage the interval of x ticks 
+ 
 ### Technical Analyses Used
+
+
 
 ## Recommendations and Next Steps
 
