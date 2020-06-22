@@ -14,7 +14,7 @@ and to get idea about how to improve access of ride-sharing services and determi
 #### Summary of Ride Sharing Performance by each City Type 
 ![SummaryDF](https://github.com/Juuune/PyBer_Analysis/blob/master/analysis/SummaryDF.PNG)
 #### Total Fare by each City Type
-![Total_Fare_by_CityType](github.com/Juuune/PyBer_Analysis/blob/masteranalysis/Total_Fare_by_CityType.PNG)
+![Total_Fare_by_CityType](https://github.com/Juuune/PyBer_Analysis/blob/master/analysis/Total_Fare_by_CityType.png)
 
 ### Results
 
