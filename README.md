@@ -7,15 +7,15 @@
 - PyBer is a virtual python-based ride-sharing app company valued at $2.3 billion and this analysis project is to 
 perform an explanatory analysis on all the rideshare data from January to early May of 2019 with compelling visualizations. 
 - The aims of this analysis is to get a snapshot of ride-sharing performance for different city type (Urban, Suburban and Rural), 
-and to get idea about how to improve access of ride-sharing services and determine affordability for undeserved neighborhood
+and to get idea about how to improve access of ride-sharing services and determine affordability for undeserved neighborhood.
 
 ### Technical Analysis
 
 #### 1) Summary of Ride Sharing Performance by each City Type 
 ![SummaryDF](https://github.com/Juuune/PyBer_Analysis/blob/master/analysis/SummaryDF.PNG)
 
-- The total rides of Urban area has almost 3 times more rides than Suburban and 10 times more rides than Rural area and 
-- the total total fare of Urban city type is bigger than combined total fare of Suburban and Rural city type. 
+- The total rides of Urban area has almost 3 times more rides than Suburban and 10 times more rides than Rural area.
+- The total fare of Urban city type is bigger than combined total fare of Suburban and Rural city type. 
 - But the average fare per ride and aerage fare per driver is significantly higher in Rural city.
  
 #### 2) Total Fare by each City Type
@@ -27,6 +27,7 @@ and to get idea about how to improve access of ride-sharing services and determi
 ### Summary
 - From the revenue generating point of view Urban City type has most ddstrategic importance and for the driver's policy it has more impact cause of number of total drivers. 
 - Since the avg.fare per ride and the avg.fare per driver is higher in Rural area it seemed new drivers in Rural city type has more potential growth than other city type.
+
 
 
 ## Challenges Encountered and Overcome
@@ -58,7 +59,7 @@ PyBer data has datetime format of yyyy-mm-dd tt:mm:ss (ex, 2019-01-01 09:45:36).
  - *city_drivers = pyber_data_df.groupby(["type","city"]).mean()["driver_count"]*
  - *city_drivers_df = pd.DataFrame(city_drivers)*
  
- Then you can get the total drivers count fot each city type with groupby function 
+ Then you can get the total drivers count fot each city type with groupby function.
  - *total_drivers = city_drivers_df.groupby(["type"]).sum()["driver_count"]*
  
 #### 3) Graphing, etc
@@ -67,25 +68,32 @@ Fisrt import the matplotlib.dates as mdates for easy use and for setting of x ti
 - To set the range of xaxis with Monthlocator (*solution : months = mdates.MonthLocator(range(1, 5), interval=1), google search*)
 - Setting x-axis (*solution : ax.xaxis.set_major_locator(months)*) 
  
- 
+
+
+
 ## Recommendations and Next Steps
 
 ### Recommendations for Future Analysis
 
 - From the PyBer ride sharing data analysis, Urban type city has most strategic focus and generates bigger revenue. but ride sharing performance in Urban city type shows low performance in January and Feburary. It seemd they need some marketing support on January and Feburary for better performance. 
 
-- Even though the driver in Urban city type has benefit of large amount of rides the avg. fare per driver in Urban city type is significantly lower than other city types that means there's more competition. 
+- Even though the driver in Urban city type has benefit of large amount of rides the avg. fare per driver in Urban city type is significantly lower than other city types that means there's more short distance rides. If company can provide easy access or efficient way for next ride that will increase total rides for Urban drivers. 
 
-- For further analysis we can look into datetime data and see if the time of the day has certain impact on riding performance and to see whether geographical location has impact on ride performance.  
+- For further analysis we can look into datetime data and see if the time of the day has certain impact on riding performance and to see those difference among city type is statiscally significant. 
 
 ### Additional Analysis 1 - Ride sharing performance by Time 
 
-* Description of Approach
+* Analyze total rides and total fares by each time interval to see whether there's a difference in ride performance by time.
+
+* Technical Steps 
+ First Set the time interval from 00:00 to 24:00 by every 2 hour and give each interval a index number.
+ Then create another column for time-interval and assign timeindex from datetime column data. (ignore the date info and only read time info from the columns).
+ create a line plot with x- axis for time interval and y-axis for total rides and another plot with y-axis for total fares.
+
+### Additional Analysis 2 - Statistical significance of difference
+
+* Analyze how manay cities of each city type has PyBer ride sharing service and determine whether the differences we analyze before is significant. 
 
 * Technical Steps
-
-### Additional Analysis 2 - Ride sharing performance by Geographic area
-
-* Description of Approach
-
-* Technical Steps
+First calculate number of cities for each city types to get the smaple size.
+perform t-test to get p-value for determin the those differences among city type are statistically significant.
