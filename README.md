@@ -9,6 +9,10 @@ perform an explanatory analysis on all the rideshare data from January to early 
 - The aims of this analysis is to get a snapshot of ride-sharing performance for different city type (Urban, Suburban and Rural), 
 and to get idea about how to improve access of ride-sharing services and determine affordability for undeserved neighborhood.
 
+### Exploratory Analysis on ride share data 
+#### Ride sharing performance by city type
+![Bubble Chart of ride sharing data](https://github.com/Juuune/PyBer_Analysis/blob/master/analysis/Fig1.png)
+
 ### Technical Analysis
 
 #### 1) Summary of Ride Sharing Performance by each City Type 
