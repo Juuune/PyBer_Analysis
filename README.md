@@ -10,8 +10,19 @@ perform an explanatory analysis on all the rideshare data from January to early 
 and to get idea about how to improve access of ride-sharing services and determine affordability for undeserved neighborhood.
 
 ### Exploratory Analysis on ride share data 
-#### Ride sharing performance by city type
+#### 1) Ride sharing performance by city type
 ![Bubble Chart of ride sharing data](https://github.com/Juuune/PyBer_Analysis/blob/master/analysis/Fig1.png)
+
+
+#### 2) Descriptive boxplots by city type
+![Number of rides by city type](https://github.com/Juuune/PyBer_Analysis/blob/master/analysis/Fig2.png)
+![Ride fare data by city type](https://github.com/Juuune/PyBer_Analysis/blob/master/analysis/Fig3.png)
+![Drivers count data by city type](https://github.com/Juuune/PyBer_Analysis/blob/master/analysis/Fig4.png)
+
+#### 3) Pie Charts of key indicators
+![Percentage of total fares by city type](https://github.com/Juuune/PyBer_Analysis/blob/master/analysis/Fig5.png)
+![Percentage of total rides by city type](https://github.com/Juuune/PyBer_Analysis/blob/master/analysis/Fig6.png)
+![Percentage of total drivers by city type](https://github.com/Juuune/PyBer_Analysis/blob/master/analysis/Fig7.png)
 
 ### Technical Analysis
 
@@ -28,7 +39,7 @@ and to get idea about how to improve access of ride-sharing services and determi
 - The Urban city type and Suburban city type shows seasonal tendency in total fare data. 
 - At the brginning of the January, it has lower total fares and gradually increse until March. At March total fares has a little spike and shows declining trend after. 
 
-### Summary
+### Summary of Analysis
 - From the revenue generating point of view Urban City type has most ddstrategic importance and for the driver's policy it has more impact cause of number of total drivers. 
 - Since the avg.fare per ride and the avg.fare per driver is higher in Rural area it seemed new drivers in Rural city type has more potential growth than other city type.
 
