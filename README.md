@@ -52,14 +52,12 @@ and to get idea about how to improve access of ride-sharing services and determi
 [Pyber_analysis_pyhon](https://github.com/Juuune/PyBer_Analysis/blob/master/PyBer.ipynb)
 
 ###  2) Create and merge dataframe 
-There was some challenges with programming and it can be resolved with google search and slack flow search and etc.  <br/>
-
 Drop index of summary dataframe (*solution : summary_df.rename_axis(None, inplace=True) , from pandas document* ) <br/>
 Get weekly resample (*solution : sum_week_df = sum_new_df.resample('W').sum(), from pandas document* ) <br/>
 Get dataframe pivot table (*solution : sum_fares_df=sum_fares_df.pivot_table(), from slack flow search*)
  
 ###  3) Key indicator calculation
- There was some challenges with caculating total driver since each row of resource data has total number of drivers for each city and single ride info at the smae time. so we can't use groupby() sum or mean directly. <br/>
+ There was some challenges with caculating total driver since each row of resource data has total number of drivers for each city and single ride info at the smae time.<br/>
  Columns of resource data : city,	date,	fare,	ride_id,	driver_count(total driver of that city),	type(city type)<br/>
  
  Calculate the total drivers, firtst create another dataframe that contains number of drivers count and groupby city and city type. <br/>
@@ -70,7 +68,7 @@ Get dataframe pivot table (*solution : sum_fares_df=sum_fares_df.pivot_table(), 
  *total_drivers = city_drivers_df.groupby(["type"]).sum()["driver_count"]*
  
 ### 4) Graphing, etc
-Fisrt import the matplotlib.dates as mdates for easy use and for setting of x tick I used tick helpers - MonthLocator and DateFormatter.<br/>
+Relocate labels with tick helpers - MonthLocator and DateFormatter.<br/>
 
 Change datetime format into montly data (*solution : ax.xaxis.set_major_formatter(mdates.DateFormatter("%b")), google search*) <br/>
 Set the range of xaxis with Monthlocator (*solution : months = mdates.MonthLocator(range(1, 5), interval=1), google search*)<br/>
