@@ -18,6 +18,23 @@ and to get idea about how to improve access of ride-sharing services and determi
 - The bubble chart showcases the average fare versus the total number of rides with bubble size based on the total number of drivers for each city type, including urban, suburban, and rural
 - For the urban city type area there's more drivers and lower total fares which means ride-sharing is more available for the customers in urban city type than rural and suburban city type area.  
 
+###  2) Summary of Ride Sharing Performance by each City Type 
+![SummaryDF](https://github.com/Juuune/PyBer_Analysis/blob/master/analysis/SummaryDF.PNG)
+- The total rides of Urban area has almost 3 times more rides than Suburban and 10 times more rides than Rural area.
+- The total fare of Urban city type is bigger than combined total fare of Suburban and Rural city type. 
+- But the average fare per ride and aerage fare per driver is significantly higher in Rural city.
+ 
+###  3) Total Fare by each City Type
+![Total_Fare_by_CityType](https://github.com/Juuune/PyBer_Analysis/blob/master/analysis/Total_Fare_by_CityType.png)
+- The Urban city type and Suburban city type shows seasonal tendency in total fare data. 
+- At the brginning of the January, it has lower total fares and gradually increse until March. At March total fares has a little spike and shows declining trend after. 
+
+###  Summary of Analysis
+- From the revenue generating point of view Urban City type has most strategic importance and for the driver's policy it has more impact cause of number of total drivers. 
+- For the customer in rural area with lower avg.fare per ride and higher number of drivers they have easier access to ride-sharing service than other areas. Also life style of urban city type leads to bigger number of total rides than other city type. 
+- Since the avg.fare per ride and the avg.fare per driver is higher in rural area, for new drivers in rural city type has more potential growth if the company can promote more numbe of rides in rural city type.
+
+## Additional charts 
 ###  2) Descriptive boxplots by city type
 ![Number of rides by city type](https://github.com/Juuune/PyBer_Analysis/blob/master/analysis/Fig2.png)
 ![Ride fare data by city type](https://github.com/Juuune/PyBer_Analysis/blob/master/analysis/Fig3.png)
@@ -29,24 +46,6 @@ and to get idea about how to improve access of ride-sharing services and determi
 ![Percentage of total rides by city type](https://github.com/Juuune/PyBer_Analysis/blob/master/analysis/Fig6.png)
 ![Percentage of total drivers by city type](https://github.com/Juuune/PyBer_Analysis/blob/master/analysis/Fig7.png)
 - From the pie charts, 62% of the revenue generated from urban city type area with 68% of ride sharing traffics and 86% of drivers of the company.
-
-## Technical Analysis
-
-###  1) Summary of Ride Sharing Performance by each City Type 
-![SummaryDF](https://github.com/Juuune/PyBer_Analysis/blob/master/analysis/SummaryDF.PNG)
-- The total rides of Urban area has almost 3 times more rides than Suburban and 10 times more rides than Rural area.
-- The total fare of Urban city type is bigger than combined total fare of Suburban and Rural city type. 
-- But the average fare per ride and aerage fare per driver is significantly higher in Rural city.
- 
-###  2) Total Fare by each City Type
-![Total_Fare_by_CityType](https://github.com/Juuune/PyBer_Analysis/blob/master/analysis/Total_Fare_by_CityType.png)
-- The Urban city type and Suburban city type shows seasonal tendency in total fare data. 
-- At the brginning of the January, it has lower total fares and gradually increse until March. At March total fares has a little spike and shows declining trend after. 
-
-###  Summary of Analysis
-- From the revenue generating point of view Urban City type has most strategic importance and for the driver's policy it has more impact cause of number of total drivers. 
-- For the customer in rural area with lower avg.fare per ride and higher number of drivers they have easier access to ride-sharing service than other areas. Also life style of urban city type leads to bigger number of total rides than other city type. 
-- Since the avg.fare per ride and the avg.fare per driver is higher in rural area, for new drivers in rural city type has more potential growth if the company can promote more numbe of rides in rural city type.
 
 ## Techinques and challenges for analysis 
 ###  1) Tranform data for analysis
