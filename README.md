@@ -1,15 +1,16 @@
 # PyBer Analysis Report
 
 ### Purpose
-- PyBer is a virtual python-based ride-sharing app company valued at $2.3 billion and this analysis project is to 
+
+PyBer is a virtual python-based ride-sharing app company valued at $2.3 billion and this analysis project is to 
 perform an explanatory analysis on all the rideshare data from January to early May of 2019 with compelling visualizations. 
 The aims of this analysis is to get a snapshot of ride-sharing performance for different city type (Urban, Suburban and Rural), 
 and to get idea about how to improve access of ride-sharing services and determine affordability for undeserved neighborhood.
 
 ### Techniques used
-Python with pandas, numpy and scipy.stats for ETL <br/>
-matplotlib.pyplot and FiveThirtyEight for visualization <br/>
-jupyter notebook 
+- Python with pandas, numpy and scipy.stats for ETL <br/>
+- matplotlib.pyplot and FiveThirtyEight for visualization <br/>
+- jupyter notebook 
 
 ## Exploratory Analysis on ride share data 
 ###  1) Ride sharing performance by city type
@@ -47,9 +48,9 @@ jupyter notebook
 - For the customer in rural area with lower avg.fare per ride and higher number of drivers they have easier access to ride-sharing service than other areas. Also life style of urban city type leads to bigger number of total rides than other city type. 
 - Since the avg.fare per ride and the avg.fare per driver is higher in rural area, for new drivers in rural city type has more potential growth if the company can promote more numbe of rides in rural city type.
 
-## Techinques and challenges for analysis [Pyber_analysis_pyhon](https://github.com/Juuune/PyBer_Analysis/blob/master/PyBer.ipynb)
+## Techinques and challenges for analysis 
 ###  1) Tranform data for analysis
-
+[Pyber_analysis_pyhon](https://github.com/Juuune/PyBer_Analysis/blob/master/PyBer.ipynb)
 
 ###  2) Create and merge dataframe 
 There was some challenges with programming and it can be resolved with google search and slack flow search and etc.  <br/>
