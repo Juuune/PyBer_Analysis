@@ -1,6 +1,6 @@
 # PyBer Analysis Report
 
-### Purpose
+### Overview
 
 PyBer is a virtual python-based ride-sharing app company valued at $2.3 billion and this analysis project is to 
 perform an explanatory analysis on all the rideshare data from January to early May of 2019 with compelling visualizations. 
